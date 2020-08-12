@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <title>Blocks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-light">
+
+<div class="container bg-light p-5">
+
+  <div class="row">
+
+    <div>
+      <span class="badge badge-secondary" id="badge__lives">Lives: 3</span>
+    </div>
+
+    <div>
+      <span class="badge badge-secondary" id="badge__record">Record: - </span>
+    </div>
+
+    <div class="col-12 col-sm-1">
+      <span class="badge badge-success" id="badge__time">Time: 0 Second(s)</span>
+    </div>
+
+  </div>
+
+  <div class="alert alert-dark" id="alert">
+    <span class="text" id="text"><strong>Find the 5 red blocks to win! &#x1f3c6 </strong></span>
+  </div>
+
+  <button type="button" class="btn btn-danger" id="button">Start</button>
+
+  <br />
+
+  <div class="row no-select">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" id="matrix"></div>
+    <div class="col-sm-2"></div>
+  </div>
+  
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
